@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <script defer src="./js/index.js"></script>
     <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/5309651afb.js" crossorigin="anonymous"></script>
     <title>Starbucks Page Clone</title>
 </head>
 
 <body>
-    <header>
+    <header class="relative">
         <nav class="nav d-flex items-center">
             <img class="header-logo" src='./images/logo.png' alt="brand logo">
-            <button class="menu-btn relative">
+            <button class="menu-btn relative" onclick="toggleMenu()">
                 <svg class="absoluteCenter" style="width: 24px; height: 24px; overflow: visible; fill:currentColor">
                     <path class="sb-hamburgerButton-middleLine-CLOSED sb-hamburgerButton-animation"
                         d="M21,12.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,12.9,21,12.9z">
@@ -32,21 +32,58 @@
                 </svg>
             </button>
         </nav>
-        <div class="sidebar">
-            <ul>
-                <li>Menu</li>
-                <li>Rewards</li>
-                <li>Gift cards</li>
-            </ul>
+        <div class="navPanel" id="primary-nav-panel">
+            <div>
+                <ul>
+                    <li>
+                        <button onclick="openSubmenu()" id='pushViewBtn-right' class="pushViewButton-right">
+                            <svg viewBox="0 0 24 24" class="valign-middle " preserveAspectRatio="xMidYMid meet"
+                                aria-hidden="true" focusable="false"
+                                style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;">
+                                <path
+                                    d="M8.902 17.656c-.293.293-.293.768 0 1.06.293.294.768.294 1.06 0L16.38 12.3c.293-.293.293-.768 0-1.06L9.86 4.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5.99 5.99L8.9 17.656z">
+                                </path>
+                            </svg>
+                            <span>Menu</span>
+                        </button>
+                    </li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                </ul>
+                <hr />
+                <div>
+                    <div class="auxnav">
+                        <button class='mr-2 sb-button '>Sign In</button>
+                        <a href="#" class="sb-button sb-button-positive">Join now</a>
+                        <p>
+                            <span class="fas fa-map-marker mr-1 ml-1"></span>
+                            <a href="#">Find a store</span>
+                        </p>
+                    </div>
 
-            <div class='auxnav'>
-                <div class="auxnav-btns">
-                    <button>Sign In</button>
-                    <button>Join now</button>
                 </div>
-                <p>Find a store</p>
             </div>
         </div>
+        <div class="navPanel navPanel-secondary" id="secondary-nav-panel">
+            <ul>
+                <li>
+                    <button id="pushViewBtn-left" class="pushViewBtn-left" onclick="closeSubmenu()">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                            focusable="false" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;">
+                            <path
+                                d="M15.098 5.78c.292-.293.292-.767 0-1.06-.293-.293-.768-.293-1.06 0L7.62 11.137c-.293.293-.293.768 0 1.06l6.52 6.52c.292.293.767.293 1.06 0 .293-.293.293-.768 0-1.06l-5.99-5.99L15.1 5.78z">
+                            </path>
+                        </svg>
+                        <span>Menu</span>
+                    </button>
+                </li>
+                <li><a href="#">All products</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Favorites</a></li>
+            </ul>
+        </div>
+
     </header>
 </body>
 
