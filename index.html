@@ -14,8 +14,30 @@
 <body>
     <header class="relative">
         <nav class="nav d-flex items-center">
-            <img class="header-logo" src='./images/logo.png' alt="brand logo">
-            <button class="menu-btn relative" onclick="toggleMenu()">
+            <div>
+                <img class="header-logo" src='./images/logo.png' alt="brand logo">
+            </div>
+            <div class="nav-global">
+                <div>
+                    <ul>
+                        <li class="desktop-listitem py-3"><a href="#">Menu</a></li>
+                        <li class="desktop-listitem py-3"><a href="#">Rewards</a></li>
+                        <li class="desktop-listitem py-3"><a href="#">Gift cards</a></li>
+                    </ul>
+                </div>
+                <div class="ml-auto auxnav">
+                    <div class="ml-4 ">
+                        <p class="inline-block mr-6">
+                            <span class="fas fa-map-marker mr-1 ml-1"></span>
+                            <a href="#">Find a store</a>
+                        </p>
+                        <button class='mr-2 sb-button'>Sign In</button>
+                        <a href="#" class="sb-button sb-button-positive">Join now</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hamburgerMenu relative" onclick="toggleMenu()">
                 <svg class="absoluteCenter" style="width: 24px; height: 24px; overflow: visible; fill:currentColor">
                     <path class="sb-hamburgerButton-middleLine-CLOSED sb-hamburgerButton-animation"
                         d="M21,12.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,12.9,21,12.9z">
@@ -32,6 +54,7 @@
                 </svg>
             </button>
         </nav>
+
         <div class="navPanel" id="primary-nav-panel">
             <div>
                 <ul>
@@ -53,11 +76,11 @@
                 <hr />
                 <div>
                     <div class="auxnav">
-                        <button class='mr-2 sb-button '>Sign In</button>
+                        <button class='mr-2 sb-button'>Sign In</button>
                         <a href="#" class="sb-button sb-button-positive">Join now</a>
                         <p>
                             <span class="fas fa-map-marker mr-1 ml-1"></span>
-                            <a href="#">Find a store</span>
+                            <a href="#">Find a store</a>
                         </p>
                     </div>
 
@@ -82,6 +105,11 @@
                 <li><a href="#">Previous</a></li>
                 <li><a href="#">Favorites</a></li>
             </ul>
+        </div>
+
+        <div class="green-bar">
+            <p>STARBUCKS REWARDS</p>
+            <button>Join in the app</button>
         </div>
 
     </header>
