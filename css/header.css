@@ -141,6 +141,15 @@ hr::before {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+.map-marker {
+  width: 26px;
+  height: 26px;
+  margin-right: 0.4em;
+  overflow: visible;
+  fill: currentcolor;
+  vertical-align: middle;
+}
+
 .sb-button {
   display: inline-block;
   background: none;
@@ -171,33 +180,6 @@ hr::before {
 }
 .navPanel-secondary .pushViewBtn-left span {
   margin: 0 auto;
-}
-
-.green-bar {
-  background: #1e3932;
-  color: #fff;
-  padding: 0.7em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.green-bar p {
-  margin: 0;
-}
-.green-bar button {
-  background: transparent;
-  border: 1px solid;
-  border-radius: 50px;
-  padding: 0.5em 0.7em;
-  color: white;
-}
-@media only screen and (min-width: 797px) {
-  .green-bar {
-    padding: 0.7em 7em;
-  }
-  .green-bar button {
-    visibility: hidden;
-  }
 }
 
 .d-flex {
@@ -301,4 +283,4 @@ hr::before {
   transform: translateX(0);
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=header.css.map */
