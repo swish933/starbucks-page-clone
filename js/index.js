@@ -1,7 +1,10 @@
 const toggleMenu = () => {
+	let doc = document.querySelector('body');
 	let nav = document.querySelector('#primary-nav-panel');
 	let navSecondary = document.querySelector('#secondary-nav-panel');
 	nav.classList.toggle('block');
+	doc.classList.toggle('noscroll');
+
 	if (!navSecondary.classList.contains('block')) {
 		return;
 	}

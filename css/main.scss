@@ -1,4 +1,4 @@
-.green-bar {
+.bg-green {
 	background: #1e3932;
 	color: #fff;
 	padding: 0.7em 2em;
@@ -25,5 +25,105 @@
 		& button {
 			visibility: hidden;
 		}
+	}
+}
+.mdMax-hidden {
+	display: none;
+	@media only screen and (min-width: 768px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+.md-hidden {
+	@media only screen and (min-width: 768px) {
+		& {
+			display: none;
+		}
+	}
+}
+
+.section-one {
+	&-content {
+		padding-bottom: 79%;
+
+		& h1 {
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		& p {
+			font-size: 1.2rem;
+		}
+
+		& > div {
+			// border: 1px solid salmon;
+			margin: 0.9em auto;
+		}
+	}
+
+	&-deskcontent {
+		margin-left: 2.5em;
+		padding: 12em 0;
+		& h1 {
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		& p {
+			font-size: 1.2rem;
+		}
+	}
+
+	&-links {
+		& > a {
+			font-size: 0.95rem;
+		}
+		& div a {
+			color: black;
+			font-size: 1.2rem;
+		}
+		& div p {
+			color: black;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.sb-button--green {
+	background-color: #008248;
+	border-color: #008248;
+	color: white;
+}
+
+.size12 {
+	width: 100%;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+.bg-mobile {
+	background: url(../images/hero-mobile.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+}
+
+.bg-desktop {
+	background: url(../images/hero-desktop.webp);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: auto 100%;
+}
+
+.bg-lightgreen {
+	background-color: rgb(212, 233, 226);
+}
+
+.text {
+	&-center {
+		text-align: center;
 	}
 }
