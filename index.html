@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script defer src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/5309651afb.js" crossorigin="anonymous"></script>
     <title>Starbucks Page Clone</title>
 </head>
 
 <body>
-    <header>
+    <header class="">
         <!-- navbar -->
-        <nav class="nav d-flex items-center">
+        <nav class="nav d-flex items-center ">
             <div>
                 <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62" focusable="false">
                     <circle fill="#fff" cx="31" cy="31" r="30.002"></circle>
@@ -30,29 +30,6 @@
                         </path>
                     </g>
                 </svg>
-            </div>
-            <div class="nav-global">
-                <div>
-                    <ul>
-                        <li class="desktop-listitem py-3"><a href="#">Menu</a></li>
-                        <li class="desktop-listitem py-3"><a href="#">Rewards</a></li>
-                        <li class="desktop-listitem py-3"><a href="#">Gift cards</a></li>
-                    </ul>
-                </div>
-                <div class="ml-auto auxnav">
-                    <div class="ml-4 ">
-                        <p class="inline-block mr-6">
-                            <svg viewBox="0 0 24 24" class="map-marker" preserveAspectRatio="xMidYMid meet"
-                                aria-hidden="true" focusable="false">
-                                <path
-                                    d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5">
-                                </path>
-                            </svg>Find a store
-                        </p>
-                        <button class='mr-2 sb-button'>Sign In</button>
-                        <a href="#" class="sb-button sb-button-positive">Join now</a>
-                    </div>
-                </div>
             </div>
 
             <button class="hamburgerMenu relative" onclick="toggleMenu()">
@@ -71,6 +48,32 @@
                     <circle class="menu-icon-hover" fill="transparent" cx="50%" cy="50%" r="75%"></circle>
                 </svg>
             </button>
+
+            <div class="nav-global ">
+                <div>
+                    <ul class="">
+                        <li class="desktop-listitem"><a href="#" class="">Menu</a></li>
+                        <li class="desktop-listitem"><a href="#" class="desktop-listitem--active">Rewards</a></li>
+                        <li class="desktop-listitem"><a href="#" class="">Gift cards</a></li>
+                    </ul>
+                </div>
+                <div class="ml-auto auxnav">
+                    <div class="ml-4 ">
+                        <p class="inline-block mr-6">
+                            <svg viewBox="0 0 24 24" class="map-marker" preserveAspectRatio="xMidYMid meet"
+                                aria-hidden="true" focusable="false">
+                                <path
+                                    d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5">
+                                </path>
+                            </svg>Find a store
+                        </p>
+                        <button class='mr-2 sb-button'>Sign In</button>
+                        <a href="#" class="sb-button sb-button-positive">Join now</a>
+                    </div>
+                </div>
+            </div>
+
+
         </nav>
 
 
@@ -143,7 +146,6 @@
     </header>
 
     <main>
-
         <section class="section-one">
             <div class="bg-lightgreen d-flex bg-mobile md-hidden">
                 <div class="size12 d-flex section-one-content">
@@ -158,11 +160,11 @@
                 </div>
             </div>
             <div class="bg-lightgreen d-flex bg-desktop mdMax-hidden">
-                <div class="size12 d-flex section-one-deskcontent">
-                    <div class="d-flex flex-col">
+                <div class="d-flex section-one-deskcontent ">
+                    <div class="d-flex flex-col ">
                         <h1>Free coffee<br />is a tap away</h1>
                         <p>Join now to start earning Rewards.</p>
-                        <div class="mt-1 section-one-links d-flex flex-col items-center">
+                        <div class="mt-1 section-one-links d-flex flex-col items-start ">
                             <a href="#" class="sb-button sb-button--green">Join now</a>
                             <div class="mt-2">
                                 <p>Or <a href=""> join in the app</a> for the best experience</p>
@@ -172,12 +174,85 @@
                 </div>
             </div>
         </section>
-        <section class="section-two">
-            <div class="section-two-header">
-                <h2>Getting started</h2>
+
+        <section class="section-two size12 d-flex flex-col items-center py-4">
+            <div class="section-two-heading">
+                <h2>Getting started is easy</h2>
+                <p>Earn Stars and get rewarded in a few easy steps.</p>
+            </div>
+
+            <div class="section-two-content size12 px-2">
+                <div class="mt-5">
+                    <div class="numbered mr-1"><img src="./images/num1.webp" alt="num1 detail"></div>
+                    <div>
+                        <h3 class='md-hidden'>Download the Starbucks app </h3>
+                        <h3 class="mdMax-hidden">Create an account</h3>
+                        <p class="mt-2"><a href=" #">Join in the app</a> to get access to the full range of Starbucks
+                            Rewards
+                            benefits.
+                            You can also <a href="#">join online</a></p>
+                    </div>
+                </div>
+                <div class=" mt-5">
+                    <div class=" numbered mr-1"><img src="./images/num2.webp" alt="num2 detail"></div>
+                    <div>
+                        <h3>Order and pay how you’d like</h3>
+                        <p class="mt-2">Use cash, credit/debit card or save some time and pay right through the app.
+                            You’ll collect
+                            Stars all ways. <a href="#">Learn how</a></p>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="numbered mr-1"><img src="./images/num3.webp" alt="num3 detail"></div>
+                    <div>
+                        <h3>Earn Stars, get Rewards </h3>
+                        <p class="mt-2">As you earn Stars, you can redeem them for Rewards—like free food, drinks, and
+                            more. Start
+                            redeeming with as little as
+                            25 Stars!</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+
+        <section class="section-three d-flex flex-col">
+            <div class="bg-greenLightSecondary">
+                <div class="section-three-heading mt-1">
+                    <h2>Get your favorites for free</h2>
+                </div>
+                <div class="section-three-tabs d-flex relative just-around mx-auto size12">
+                    <button class="tab-link pt-1 pb-2 relative">
+                        <h3>25<span class="text-xs color-gold">★</span></h3>
+                        <div class="tab--slider" id="tabs-slider-inside-0"></div>
+                    </button>
+                    <button class="tab-link pt-1 pb-2 relative">
+                        <h3>50<span class="text-xs color-gold">★</span></h3>
+                        <div class="" id="tabs-slider-inside-1"></div>
+                    </button>
+                    <button class="tab-link pt-1 pb-2 relative">
+                        <h3>150<span class="text-xs color-gold">★</span></h3>
+                        <div class="" id="tabs-slider-inside-2"></div>
+                    </button>
+                    <button class="tab-link pt-1 pb-2 relative">
+                        <h3>200<span class="text-xs color-gold">★</span></h3>
+                        <div class="" id="tabs-slider-inside-3"></div>
+
+                    </button>
+                    <button class="tab-link pt-1 pb-2 relative">
+                        <h3>400<span class="text-xs color-gold">★</span></h3>
+                        <div class="" id="tabs-slider-inside-4"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="relative bg-lightgreen tab-view">
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 
