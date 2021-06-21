@@ -1,8 +1,10 @@
+let doc = document.querySelector('body');
+let header = document.querySelector('header');
+let navPrimary = document.querySelector('#primary-nav-panel');
+let navSecondary = document.querySelector('#secondary-nav-panel');
+
 const toggleMenu = () => {
-	let doc = document.querySelector('body');
-	let nav = document.querySelector('#primary-nav-panel');
-	let navSecondary = document.querySelector('#secondary-nav-panel');
-	nav.classList.toggle('block');
+	navPrimary.classList.toggle('block');
 	doc.classList.toggle('noscroll');
 
 	if (!navSecondary.classList.contains('block')) {
@@ -13,15 +15,10 @@ const toggleMenu = () => {
 };
 
 const openSubmenu = () => {
-	let navPrimary = document.querySelector('#primary-nav-panel');
-	let navSecondary = document.querySelector('#secondary-nav-panel');
 	navSecondary.classList.add('block');
 };
 
 const closeSubmenu = () => {
-	let navPrimary = document.querySelector('#primary-nav-panel');
-	let navSecondary = document.querySelector('#secondary-nav-panel');
-
 	navSecondary.classList.remove('block');
 	navPrimary.classList.add('block');
 };

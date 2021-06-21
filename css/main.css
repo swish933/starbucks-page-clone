@@ -1,7 +1,7 @@
 .bg-green {
   background: #1e3932;
   color: #fff;
-  padding: 0.7em 2em;
+  padding: 0.5em 1.3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,42 +40,6 @@
   }
 }
 
-.section-one-content {
-  padding-bottom: 79%;
-}
-.section-one-content h1 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.section-one-content p {
-  font-size: 1.2rem;
-}
-.section-one-content > div {
-  margin: 0.9em auto;
-}
-.section-one-deskcontent {
-  margin-left: 2.5em;
-  padding: 12em 0;
-}
-.section-one-deskcontent h1 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.section-one-deskcontent p {
-  font-size: 1.2rem;
-}
-.section-one-links > a {
-  font-size: 0.95rem;
-}
-.section-one-links div a {
-  color: black;
-  font-size: 1.2rem;
-}
-.section-one-links div p {
-  color: black;
-  font-size: 1.2rem;
-}
-
 .sb-button--green {
   background-color: #008248;
   border-color: #008248;
@@ -108,8 +72,53 @@
   background-color: #d4e9e2;
 }
 
+.green-bar p {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
 .text-center {
   text-align: center;
+}
+
+.section-one-content {
+  padding-bottom: 79%;
+}
+.section-one-content h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.section-one-content p {
+  font-weight: 400;
+}
+.section-one-content > div {
+  margin: 0.9em auto;
+}
+.section-one-deskcontent {
+  margin-left: 2.5em;
+  padding: 12em 0;
+}
+.section-one-deskcontent h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.section-one-deskcontent p {
+  font-size: 1.2rem;
+}
+.section-one-links > a {
+  font-size: 0.95rem;
+}
+.section-one-links div a {
+  color: black;
+  font-weight: 400;
+}
+.section-one-links div p {
+  color: black;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

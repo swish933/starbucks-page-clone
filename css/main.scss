@@ -1,7 +1,7 @@
 .bg-green {
 	background: #1e3932;
 	color: #fff;
-	padding: 0.7em 2em;
+	padding: 0.5em 1.3em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -44,53 +44,6 @@
 	}
 }
 
-.section-one {
-	&-content {
-		padding-bottom: 79%;
-
-		& h1 {
-			text-transform: uppercase;
-			margin-bottom: 0;
-		}
-
-		& p {
-			font-size: 1.2rem;
-		}
-
-		& > div {
-			// border: 1px solid salmon;
-			margin: 0.9em auto;
-		}
-	}
-
-	&-deskcontent {
-		margin-left: 2.5em;
-		padding: 12em 0;
-		& h1 {
-			text-transform: uppercase;
-			margin-bottom: 0;
-		}
-
-		& p {
-			font-size: 1.2rem;
-		}
-	}
-
-	&-links {
-		& > a {
-			font-size: 0.95rem;
-		}
-		& div a {
-			color: black;
-			font-size: 1.2rem;
-		}
-		& div p {
-			color: black;
-			font-size: 1.2rem;
-		}
-	}
-}
-
 .sb-button--green {
 	background-color: #008248;
 	border-color: #008248;
@@ -122,8 +75,74 @@
 	background-color: rgb(212, 233, 226);
 }
 
+.green-bar {
+	& p {
+		font-size: 0.86rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+	}
+
+	// @media only screen and (min-width: 1023px) {
+	// 	& {
+	// 		position: relative;
+	// 	}
+	// }
+}
+
 .text {
 	&-center {
 		text-align: center;
+	}
+}
+
+.section-one {
+	&-content {
+		padding-bottom: 79%;
+
+		& h1 {
+			text-transform: uppercase;
+			margin-bottom: 0;
+			font-size: 1.8rem;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+
+		& p {
+			// font-size: 0.95rem;
+			font-weight: 400;
+		}
+
+		& > div {
+			// border: 1px solid salmon;
+			margin: 0.9em auto;
+		}
+	}
+
+	&-deskcontent {
+		margin-left: 2.5em;
+		padding: 12em 0;
+		& h1 {
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		& p {
+			font-size: 1.2rem;
+		}
+	}
+
+	&-links {
+		& > a {
+			font-size: 0.95rem;
+		}
+		& div a {
+			color: black;
+			font-weight: 400;
+		}
+
+		& div p {
+			color: black;
+			font-size: 1.2rem;
+		}
 	}
 }
