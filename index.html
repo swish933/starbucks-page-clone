@@ -175,7 +175,7 @@
             </div>
         </section>
 
-        <section class="section-two size12 d-flex flex-col items-center py-4">
+        <section class="section-two size12 d-flex flex-col items-center pt-4">
             <div class="section-two-heading">
                 <h2>Getting started is easy</h2>
                 <p>Earn Stars and get rewarded in a few easy steps.</p>
@@ -218,37 +218,69 @@
 
         <section class="section-three d-flex flex-col">
             <div class="bg-greenLightSecondary">
-                <div class="section-three-heading mt-1">
+                <div class="section-three-heading">
                     <h2>Get your favorites for free</h2>
                 </div>
                 <div class="section-three-tabs d-flex relative just-around mx-auto size12">
-                    <button class="tab-link pt-1 pb-2 relative">
+                    <button class="tab-link pt-1 pb-2 relative" onclick="openPanel(event,`tabPanel-0`)">
                         <h3>25<span class="text-xs color-gold">★</span></h3>
                         <div class="tab--slider" id="tabs-slider-inside-0"></div>
                     </button>
-                    <button class="tab-link pt-1 pb-2 relative">
+                    <button class="tab-link pt-1 pb-2 relative" onclick="openPanel(event,`tabPanel-1`)">
                         <h3>50<span class="text-xs color-gold">★</span></h3>
                         <div class="" id="tabs-slider-inside-1"></div>
                     </button>
-                    <button class="tab-link pt-1 pb-2 relative">
+                    <button class="tab-link pt-1 pb-2 relative" onclick="openPanel(event,`tabPanel-2`)">
                         <h3>150<span class="text-xs color-gold">★</span></h3>
                         <div class="" id="tabs-slider-inside-2"></div>
                     </button>
-                    <button class="tab-link pt-1 pb-2 relative">
+                    <button class="tab-link pt-1 pb-2 relative" onclick="openPanel(event,`tabPanel-3`)">
                         <h3>200<span class="text-xs color-gold">★</span></h3>
                         <div class="" id="tabs-slider-inside-3"></div>
 
                     </button>
-                    <button class="tab-link pt-1 pb-2 relative">
+                    <button class="tab-link pt-1 pb-2 relative" onclick="openPanel(event,`tabPanel-4`)">
                         <h3>400<span class="text-xs color-gold">★</span></h3>
                         <div class="" id="tabs-slider-inside-4"></div>
                     </button>
                 </div>
             </div>
             <div class="relative bg-lightgreen tab-view">
-                <div>
-                    <div></div>
-                    <div></div>
+                <div class="tab-content" id="tabPanel-0">
+                    <div class="tab-img"><img src="./images/tab-img1.webp" alt="image for tab 1"></div>
+                    <div class="tab-text">
+                        <h4>Customize your drink</h4>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your
+                            favorite syrup.</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabPanel-1">
+                    <div class="tab-img"><img src="./images/tab-img2.webp" alt="image for tab 2"></div>
+                    <div class="tab-text">
+                        <h4>Brewed hot coffee, bakery item or hot tea</h4>
+                        <p>Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabPanel-2">
+                    <div class="tab-img"><img src="./images/tab-img3.webp" alt="image for tab 3"></div>
+                    <div class="tab-text">
+                        <h4>Handcrafted drink, hot breakfast or parfait</h4>
+                        <p>Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabPanel-3">
+                    <div class="tab-img"><img src="./images/tab-img4.webp" alt="image for tab 4"></div>
+                    <div class="tab-text">
+                        <h4>Salad, sandwich or protein box</h4>
+                        <p>Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabPanel-4">
+                    <div class="tab-img"><img src="./images/tab-img5.webp" alt="image for tab 5"></div>
+                    <div class="tab-text">
+                        <h4>Select merchandise or at-home coffee</h4>
+                        <p>Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</p>
+                    </div>
                 </div>
             </div>
 

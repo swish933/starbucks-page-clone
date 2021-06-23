@@ -106,6 +106,9 @@
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
 
 .b1 {
   border: 1px solid salmon;
@@ -232,11 +235,12 @@
   font-weight: 450;
 }
 .section-three-tabs {
-  max-width: 50rem;
+  max-width: 35rem;
   width: 100%;
 }
 .section-three .tab-link {
-  flex-grow: 1;
+  cursor: pointer;
+  flex-basis: 7rem;
   border: none;
   background: none;
 }
@@ -244,6 +248,7 @@
   font-size: 1.2rem;
   font-weight: 450;
   margin: 0;
+  padding-bottom: 0.4em;
 }
 .section-three .tab-link .tab--slider {
   position: absolute;
@@ -253,9 +258,45 @@
   background-color: #008248;
   width: 100%;
 }
+.section-three .tab-content {
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.section-three .tab-content .tab-img {
+  width: 100%;
+  max-width: 50rem;
+}
+.section-three .tab-content .tab-img img {
+  width: 100%;
+  height: auto;
+}
+.section-three .tab-content .tab-text {
+  width: 80%;
+  max-width: 20rem;
+}
+.section-three .tab-content .tab-text p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.section-three .tab-content .tab-text h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 @media only screen and (min-width: 768px) {
   .section-three {
     margin-top: 7em;
+  }
+  .section-three .tab-content {
+    flex-flow: row nowrap;
+    text-align: left;
+  }
+  .section-three .tab-content .tab-img {
+    max-width: 25rem;
+    margin-right: 4em;
   }
 }
 
