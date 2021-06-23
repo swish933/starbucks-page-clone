@@ -110,6 +110,15 @@
   text-align: left;
 }
 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .b1 {
   border: 1px solid salmon;
 }
@@ -245,26 +254,34 @@
   background: none;
 }
 .section-three .tab-link h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 450;
   margin: 0;
   padding-bottom: 0.4em;
 }
-.section-three .tab-link .tab--slider {
+.section-three .tab-link .tab-slider {
   position: absolute;
   bottom: 0;
   left: 0;
   height: 4px;
   background-color: #008248;
+  width: 0;
+  transition: width 0.3s ease-out;
+}
+.section-three .tab-link .tab-slider--active {
+  display: block;
   width: 100%;
+  transition: width 0.35s ease-in;
 }
 .section-three .tab-content {
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.14);
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 3em 0em;
+  animation: fadeEffect 0.7s;
 }
 .section-three .tab-content .tab-img {
   width: 100%;
@@ -289,6 +306,10 @@
 @media only screen and (min-width: 768px) {
   .section-three {
     margin-top: 7em;
+  }
+  .section-three .tab-link h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   .section-three .tab-content {
     flex-flow: row nowrap;

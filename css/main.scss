@@ -130,6 +130,16 @@
 	}
 }
 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .b1 {
 	border: 1px solid salmon;
 }
@@ -294,34 +304,42 @@
 		border: none;
 		background: none;
 		& h3 {
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 			font-weight: 450;
 			margin: 0;
 			padding-bottom: 0.4em;
 		}
 
-		& .tab--slider {
+		& .tab-slider {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			height: 4px;
 			background-color: #008248;
+			width: 0;
+			transition: width 0.3s ease-out;
+		}
+
+		& .tab-slider--active {
+			display: block;
 			width: 100%;
+			transition: width 0.35s ease-in;
 		}
 	}
 
 	& .tab-content {
 		box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.14);
-		display: flex;
+		display: none;
 		flex-flow: column nowrap;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		padding: 3em 0em;
+		animation: fadeEffect 0.7s;
 
 		& .tab-img {
 			width: 100%;
 			max-width: 50rem;
-			// border: 1px solid salmon;
 
 			& img {
 				width: 100%;
@@ -348,6 +366,13 @@
 	@media only screen and (min-width: 768px) {
 		& {
 			margin-top: 7em;
+
+			& .tab-link {
+				& h3 {
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+			}
 		}
 
 		& .tab-content {
