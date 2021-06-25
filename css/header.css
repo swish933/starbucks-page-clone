@@ -314,6 +314,9 @@ hr::before {
 .mb-1 {
   margin-bottom: 0.6em;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

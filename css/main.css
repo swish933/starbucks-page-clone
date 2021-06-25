@@ -215,15 +215,16 @@
   .section-two-content {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 3.5em;
+    gap: 5em;
     align-items: start;
+    justify-items: center;
   }
   .section-two-content > div {
     flex-flow: column;
     text-align: center;
     align-items: center;
     justify-items: flex-start;
-    max-width: 20rem;
+    max-width: 19rem;
   }
   .section-two-content .grid-1 {
     grid-column: 2/3;
@@ -423,7 +424,7 @@
   width: 100%;
 }
 .section-five-content > div {
-  padding: 2em;
+  padding: 1.3em;
   margin-top: 4em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -431,12 +432,12 @@
   padding-bottom: 2em;
 }
 .section-five-info h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 450;
   margin: 0;
 }
 .section-five-info p {
-  margin: 0;
+  margin-top: 0.3em;
 }
 .section-five-detail {
   display: flex;
@@ -466,17 +467,18 @@
     align-items: start;
   }
   .section-five-content .grid-3 {
-    grid-template-columns: auto 1.5fr 1fr 1fr;
+    grid-template-columns: auto auto auto 1fr;
   }
   .section-five-info {
     padding-right: 2em;
   }
   .section-five-info p {
+    min-width: 9ch;
     max-width: 9em;
   }
   .section-five-info h4 {
     font-size: 1.3rem;
-    max-width: 9em;
+    max-width: 8em;
   }
   .section-five-detail img {
     margin-right: 1em;
@@ -486,7 +488,7 @@
   }
   .section-five-detail p,
 .section-five-detail h5 {
-    min-width: 7em;
+    min-width: 5em;
     max-width: 13rem;
   }
 }
@@ -494,6 +496,100 @@
   .section-five-detail p,
 .section-five-detail h5 {
     max-width: 15rem;
+  }
+}
+
+.section-six {
+  padding: 1.3em 1.6em 4em;
+}
+.section-six h4,
+.section-six h3 {
+  font-size: 1.3rem;
+}
+.section-six h4 {
+  margin-top: 4em;
+}
+.section-six p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.section-six .small {
+  margin: 0;
+  line-height: normal;
+}
+.section-six form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40em;
+}
+.section-six form .sb-button--white {
+  margin-top: 1em;
+  align-self: flex-end;
+}
+.section-six .formWrapper {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  padding: 0.7em;
+}
+.section-six .input {
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  width: 100%;
+}
+.section-six a {
+  color: #008248;
+}
+@media only screen and (min-width: 768px) {
+  .section-six {
+    padding-left: 20%;
+  }
+  .section-six > div {
+    width: 55%;
+  }
+  .section-six h4,
+.section-six h3 {
+    font-size: 1.5rem;
+  }
+  .section-six p {
+    font-size: 1rem;
+  }
+}
+
+.section-seven {
+  background: #f7f7f7;
+  padding: 1.3em 1.6em 4em;
+}
+.section-seven p {
+  font-size: 0.84rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.section-seven a {
+  color: #008248;
+}
+.section-seven h5 {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+@media only screen and (min-width: 768px) {
+  .section-seven {
+    padding: 1.6em 2.5em 4em;
+  }
+  .section-seven > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.7em;
+    align-items: start;
+  }
+  .section-seven > div p {
+    font-size: 0.89rem;
+    max-width: 33rem;
   }
 }
 
