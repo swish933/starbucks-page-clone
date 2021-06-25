@@ -10,7 +10,7 @@ const toggleMenu = () => {
 	if (!navSecondary.classList.contains('block')) {
 		return;
 	}
-	nav.classList.remove('block');
+	navPrimary.classList.remove('block');
 	navSecondary.classList.remove('block');
 };
 
