@@ -214,7 +214,7 @@
   }
   .section-two-content {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto auto auto 1fr;
     gap: 5em;
     align-items: start;
     justify-items: center;
