@@ -1,3 +1,94 @@
+.lg-flex {
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1em;
+}
 
+.iconButton {
+  transition: all 0.2s ease-out;
+}
+
+.expander-clickable--expanded {
+  transform: rotate(180deg);
+}
+
+.expander-clickable {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+.expander-clickable button {
+  border: none;
+  background: transparent;
+}
+.expander-clickable:hover .menu-icon-hover {
+  transform: scale(1);
+  fill: currentColor;
+}
+
+.expander-clickable--expanded {
+  transform: rotate(180deg);
+}
+
+footer {
+  padding: 3em 2.6em 2em;
+}
+footer h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin-bottom: 0.9em;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+footer ul li a {
+  color: currentColor;
+  text-decoration: none;
+}
+footer ul li:hover {
+  color: black;
+}
+
+.footerSubmenu {
+  height: 0px;
+  transition: height 0.3s ease-in;
+}
+
+.height-auto {
+  height: 230px;
+}
+
+.pushdownContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.lg-inline-block {
+  display: none;
+  margin: 1em;
+}
+@media only screen and (min-width: 1023px) {
+  .lg-hidden {
+    display: none;
+  }
+  .lg-inline-block {
+    display: inline-block;
+  }
+  .lg-flex {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */
