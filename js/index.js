@@ -42,4 +42,18 @@ const openPanel = (evt, panelName) => {
 	evt.currentTarget.lastElementChild.classList.add('tab-slider--active');
 };
 
+const openFootermenu = (evt, id) => {
+	evt.currentTarget.lastElementChild.classList.toggle(
+		'expander-clickable--expanded'
+	);
+
+	let submenu = document.getElementById(id);
+
+	submenu.classList.toggle('height-auto');
+
+	submenu
+		.getElementsByClassName('pushdownContent')[0]
+		.classList.toggle('hidden');
+};
+
 window.onload = document.getElementById('tabLink0').click();
